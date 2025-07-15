@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #3e88f7;
+  --hover-color: #ffffff;
+}
+
+/* Hero section with gradient overlay */
+.hero-section {
+  height: 40vh;
+  background: linear-gradient(rgba(62, 136, 247, 0.7), rgba(62, 136, 247, 0.7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--hover-color);
+}
+
+/* Contact CTA with solid brand color */
+.contact-cta {
+  background: linear-gradient(rgba(62, 136, 247, 0.7), rgba(62, 136, 247, 0.7));
+  height: auto; /* adjust as needed */
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--hover-color);
+}
+
+.contact-cta h2,
+.contact-cta p {
+  color: var(--hover-color);
+}
+
+.contact-cta .btn-contact {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-cta .btn-contact:hover {
+  background-color: var(--primary-color);
+  color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+
+
+/* Navbar links + hover */
+.nav-hover {
+  color: var(--hover-color) !important;
+  transition: all 0.3s ease;
+}
+
+.nav-hover:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for fade-in effect */
+.animate {
+  animation: fadeInUp 1s ease both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h5 {
+  font-weight: 700;
+}
+
+/* Reusable button for hero & contact form */
+.btn-contact {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: var(--primary-color);
+  color: var(--hover-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* ✅ Contact Form Styles */
+#contactForm {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+#contactForm label {
+  color: #333;
+}
+
+#contactForm input,
+#contactForm textarea {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(62, 136, 247, 0.25);
+}
+
+#contactForm .btn-contact {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+

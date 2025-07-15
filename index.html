@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BrightSpark Creative Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ✅ FIXED Navbar with proper Offcanvas + inline links -->
+  <nav class="navbar navbar-dark bg-dark sticky-top shadow">
+    <div class="container-fluid justify-content-between">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#">BrightSpark</a>
+
+      <!-- Links for large screens only -->
+      <div class="d-none d-lg-flex">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item mx-2"><a class="nav-link active nav-hover" href="#">Home</a></li>
+          <li class="nav-item mx-2"><a class="nav-link nav-hover" href="#services">Services</a></li>
+          <li class="nav-item mx-2"><a class="nav-link nav-hover" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item mx-2"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Toggle for small screens only -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas Sidebar for small screens -->
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active nav-hover" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-hover" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link nav-hover" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center text-white text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-3 animate">Bright Ideas, Creative Results</h1>
+      <p class="lead mb-4 animate">We craft stunning brands, engaging websites, and impactful campaigns.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg animate">Start Your Project</a>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">What We Do</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-4 shadow-sm card-hover">
+            <h5>Brand Strategy</h5>
+            <p>Strategic consulting to build memorable brands and connect with your audience.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-4 shadow-sm card-hover">
+            <h5>Web Design</h5>
+            <p>Modern, responsive websites that look great and deliver results on any device.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-4 shadow-sm card-hover">
+            <h5>Marketing Campaigns</h5>
+            <p>Creative online and offline campaigns that grow your reach and impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Cards -->
+  <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Recent Work</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Brand Reboot</h5>
+              <p class="card-text">A fresh identity and website for a startup brand.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Product Launch</h5>
+              <p class="card-text">Multi-channel marketing campaign for a new product.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Social Boost</h5>
+              <p class="card-text">Content and ads strategy for social media engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+<section id="contact" class="contact-cta py-5 text-center text-white">
+  <div class="container">
+    <h2 class="mb-4">Let’s Build Something Great</h2>
+    <p class="lead mb-4">Ready to elevate your business with creative solutions?</p>
+    <a href="contact.html" class="btn btn-contact btn-lg">Contact Us</a>
+  </div>
+</section>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      &copy; 2025 BrightSpark Creative Agency. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
